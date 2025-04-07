@@ -1,0 +1,45 @@
+{
+    "name": "PostgreSQL",
+    "id": "postgresql",
+    "version": "1.0.0",
+    "description": "PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "14",
+            "description": "PostgreSQL version (11..17)"
+        },
+        "port": {
+            "type": "string",
+            "default": "5432",
+            "description": "Port to expose PostgreSQL on"
+        },
+        "autoStart": {
+            "type": "boolean",
+            "default": true,
+            "description": "Start PostgreSQL using supervisord"
+        },
+        "users": {
+            "type": "string",
+            "default": "none",
+            "description": "List of users to create in PostgreSQL"
+        },
+        "sql": {
+            "type": "string",
+            "default": "none",
+            "description": "Path or URL to a SQL file to execute on startup"
+        }
+    },
+    "entrypoint": "start-postgresql.sh",
+    "postAttachCommand": "/usr/local/bin/create-pg-users.sh ; /usr/local/bin/init-pg-sql.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-ossdata.vscode-postgresql"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

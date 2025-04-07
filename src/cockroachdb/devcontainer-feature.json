@@ -1,0 +1,37 @@
+{
+    "name": "CockroachDB",
+    "id": "cockroachdb",
+    "version": "1.0.0",
+    "description": "Installs CockroachDB and start in a single node mode.",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "v25.1.2",
+            "description": "CockroachDB version to install (e.g., 'v25.1.2', 'v23.1')."
+        },
+        "port": {
+            "type": "string",
+            "default": "26257",
+            "description": "Port to expose for CockroachDB."
+        },
+        "ui": {
+            "type": "string",
+            "default": "8080",
+            "description": "Port to expose for CockroachDB."
+        },
+        "installMolt": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install the Molt migration tool."
+        },
+        "autoStart": {
+            "type": "boolean",
+            "default": true,
+            "description": "Automatically start CockroachDB after installation."
+        }
+    },
+    "entrypoint": "start-cockroach.sh",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
