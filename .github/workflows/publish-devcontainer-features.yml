@@ -2,8 +2,8 @@ name: Publish Dev Container Features
 
 on:
   workflow_dispatch:  # Run manually
-  push:
-    branches: [ main ]  # Or your default branch
+  # push:
+  #   branches: [ main ]  # Or your default branch
 
 jobs:
   publish:
