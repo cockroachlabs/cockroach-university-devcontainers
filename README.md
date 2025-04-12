@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/github/v/tag/cockroachlabs/cockroach-university-devcontainers?label=latest&sort=semver)](https://github.com/cockroachlabs/cockroach-university-devcontainers/tags)
 
 
-> - *DO-NOT USE YET OR IN PRODUCTION*
+> - *ONLY FOR DEVELOPMENT. DO-NOT USE IN PRODUCTION*
 
 ## How to use these features
 
