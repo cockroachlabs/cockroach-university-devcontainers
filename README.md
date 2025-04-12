@@ -1,8 +1,13 @@
 # DevContainers features for CockroachDB 
 
-> - REPO STATUS: **ACTIVE DEVELOPMENT**
+# Cockroach University Dev Containers
+
+[![Publish Features](https://github.com/cockroachlabs/cockroach-university-devcontainers/actions/workflows/publish-devcontainer-features.yml/badge.svg)](https://github.com/cockroachlabs/cockroach-university-devcontainers/actions/workflows/publish-devcontainer-features.yml)
+[![Dev Container Features](https://img.shields.io/badge/DevContainer-Features%20Published-blue?logo=github)](https://github.com/cockroachlabs/cockroach-university-devcontainers/packages)
+[![Version](https://img.shields.io/github/v/tag/cockroachlabs/cockroach-university-devcontainers?label=latest&sort=semver)](https://github.com/cockroachlabs/cockroach-university-devcontainers/tags)
+
+
 > - *DO-NOT USE YET OR IN PRODUCTION*
-> - *ARTIFACTS HAVEN'T BEING CREATED YET*
 
 ## How to use these features
 
