@@ -22,5 +22,5 @@ jobs:
       - name: Publish features to GHCR
         run: |
           npx -y @devcontainers/cli@latest features publish \
-            --namespace ghcr.io/${{ github.repository_owner }} \
+            --namespace ${{ github.repository_owner }} \
             ./src
