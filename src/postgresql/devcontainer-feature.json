@@ -31,7 +31,7 @@
         }
     },
     "entrypoint": "start-postgresql.sh",
-    "postAttachCommand": "/usr/local/bin/create-pg-users.sh ; /usr/local/bin/init-pg-sql.sh",
+    "postAttachCommand": "[ -x /usr/local/bin/create-pg-users.sh ] && /usr/local/bin/create-pg-users.sh || true; [ -x /usr/local/bin/init-pg-sql.sh ] && /usr/local/bin/init-pg-sql.sh || true",
     "customizations": {
         "vscode": {
             "extensions": [

@@ -135,7 +135,6 @@ fi
 
 if [ "$PG_SQL" = "none" ]; then
     echo "[INFO] [BUILD PHASE] No SQL file specified. Skipping init SQL execution."
-    exit 0
 else
     cat << SQLSCRIPT > /usr/local/bin/init-pg-sql.sh
 #!/bin/bash
