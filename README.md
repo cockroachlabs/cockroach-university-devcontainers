@@ -136,7 +136,7 @@ This example is about migrate PostgreSQL databases to CockroachDB using the prov
             "ghcr.io/cockroachlabs/cockroach-university-devcontainers/cockroachdb:1": {
                 "version": "v25.1.2"
             },
-            "ghcr.io/cockroachlabs/cockroach-university-devcontainers/postgres:1":{
+            "ghcr.io/cockroachlabs/cockroach-university-devcontainers/postgres:1.0.1":{
                 "version": "14",
                 "users": "vscode:vscode",
                 "sql": "test.sql"
